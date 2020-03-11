@@ -1,15 +1,45 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <app-title-bar></app-title-bar>
+    <div class="container">
+      <app-status></app-status>
+      <router-view></router-view>
+    </div>
+    
   </div>
 </template>
 
 <script>
+  import AppTitleBar from './components/AppTitleBar.vue/AppTitleBar'
+  import AppStatus from './components/AppStatus/AppStatus'
   export default {
-    name: 'mt-ticket'
+    name: 'mt-ticket',
+    components: {
+      AppTitleBar,
+      AppStatus
+    }
   }
 </script>
 
 <style>
   /* CSS */
+  /* 
+   * 1rem = 100px
+   * .1rem = 10px
+  */
+  html {
+    font-size: 625%;
+  }
+  html, body, #app{
+    width: 100%;
+    height: 100%;
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    border-radius: .05rem;
+  }
+  .container {
+    background-color: white;
+    height: calc(100% - .3rem);
+    width: 100%;
+    display: flex;
+  }
 </style>

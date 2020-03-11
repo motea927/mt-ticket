@@ -1,6 +1,6 @@
 {
   "name": "mt-ticket",
-  "version": "1.0",
+  "version": "1.0.0",
   "author": "",
   "description": "A ticket bot with captcha recognition",
   "license": null,
