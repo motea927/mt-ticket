@@ -8,3 +8,6 @@ npm-debug.log
 npm-debug.log.*
 thumbs.db
 !.gitkeep
+static/mtblock.crx
+static/Brave-Browser/*
+static/jsModel/*

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <app-loading v-show="isLoading"></app-loading>
     <app-title-bar></app-title-bar>
     <div class="container">
       <app-status></app-status>
@@ -12,11 +13,27 @@
 <script>
   import AppTitleBar from './components/AppTitleBar.vue/AppTitleBar'
   import AppStatus from './components/AppStatus/AppStatus'
+  import AppLoading from './components/AppLoading/AppLoading'
+  import eventBus from './eventBus'
   export default {
     name: 'mt-ticket',
     components: {
       AppTitleBar,
-      AppStatus
+      AppStatus,
+      AppLoading
+    },
+    mounted () {
+      eventBus.$on('onLoading', this.onLoading)
+    },
+    data () {
+      return {
+        isLoading: false
+      }
+    },
+    methods: {
+      onLoading (newIsLoading) {
+        this.isLoading = newIsLoading
+      }
     }
   }
 </script>

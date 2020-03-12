@@ -9,6 +9,11 @@ export default new Router({
       path: '/',
       name: 'AppHome',
       component: require('@/components/AppHome/AppHome').default
+    },
+    {
+      path: '/buyTicket/tixCraft/:currentBrowserType',
+      name: 'AppTixCraft',
+      component: require('@/components/AppTixCraft/AppTixCraft').default
     }
   ]
 })

@@ -22,7 +22,7 @@
               </label>
             </li>
           </ul>
-          <button class="btn--default">開啟瀏覽器</button>
+          <router-link :to="`/buyTicket/tixCraft/${currentBrowserType}`"><button class="btn--default">開啟瀏覽器</button></router-link>
       </form>
   </div>
 </template>
@@ -31,6 +31,9 @@
 import eventBus from '../../eventBus'
 export default {
   name: 'AppHome',
+  mounted () {
+    eventBus.$emit('onStatusChange', '初始化完成')
+  },
   data () {
     return {
       ticketArr: ['kktix', 'tixcraft'],
@@ -38,9 +41,6 @@ export default {
       browserTypeArr: ['brave', 'chrome', 'firefox'],
       currentBrowserType: 'brave'
     }
-  },
-  mounted () {
-    eventBus.$emit('onStatusChange', '初始化完成')
   }
 }
 </script>
@@ -111,12 +111,16 @@ export default {
     background-color: #f6f6f6;
     border: .02rem solid #ce7d88;
     color: #ce7d88;
-    margin: .5rem auto;
+    margin: 0 auto;
     &:hover {
       opacity: .8;
     }
     &:active {
       opacity: .6;
     }
+  }
+  a {
+    text-decoration: none;
+    color: #ce7d88;
   }
 </style>
