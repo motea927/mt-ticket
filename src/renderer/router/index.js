@@ -14,6 +14,11 @@ export default new Router({
       path: '/buyTicket/tixCraft/:currentBrowserType',
       name: 'AppTixCraft',
       component: require('@/components/AppTixCraft/AppTixCraft').default
+    },
+    {
+      path: '/buyTicket/kktix/:currentBrowserType',
+      name: 'AppKKtix',
+      component: require('@/components/AppKKtix/AppKKtix').default
     }
   ]
 })

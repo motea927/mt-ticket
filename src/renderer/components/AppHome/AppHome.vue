@@ -22,7 +22,7 @@
               </label>
             </li>
           </ul>
-          <router-link :to="`/buyTicket/tixCraft/${currentBrowserType}`"><button class="btn--default">開啟瀏覽器</button></router-link>
+          <router-link :to="`/buyTicket/${currentTicketSystem}/${currentBrowserType}`"><button class="btn--default">開啟瀏覽器</button></router-link>
       </form>
   </div>
 </template>
