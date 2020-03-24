@@ -3,7 +3,8 @@
 
 
 
-結合自動辨識驗證碼之購票機器人
+結合自動辨識驗證碼之購票機器人  
+
 (僅供學術研究用途，請勿違法使用。)  
 
 (某些檔案將不會上傳 ex: Model, Train Code ...)
@@ -43,5 +44,5 @@ static/jsModel/*
 ```
 
 ## 參考
-[Keras-Python3.6-captcha](https://github.com/gary9987/Keras-TaiwanHighSpeedRail-captcha)
-[selenium-webdriver](https://selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/)
+- [Keras-Python3.6-captcha](https://github.com/gary9987/Keras-TaiwanHighSpeedRail-captcha)
+- [selenium-webdriver](https://selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/)
