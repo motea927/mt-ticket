@@ -4,8 +4,9 @@
 
 
 結合自動辨識驗證碼之購票機器人
-(僅供學術研究用途，請勿違法使用。)
-(為避免爭議，某些檔案將不會上傳 ex: Model, Train Code ...)
+(僅供學術研究用途，請勿違法使用。)  
+
+(某些檔案將不會上傳 ex: Model, Train Code ...)
 
 [Demo Video](https://www.youtube.com/watch?v=AwA8RboFUFE)
 
@@ -22,7 +23,7 @@
 - **selenium-webdriver**：用於控制及自動化操作瀏覽器
 - **chromedriver**：讓webdriver控制chrome之必須框架
 - **geckodriver**：讓webdriver控制firefox之必須框架
-- 
+
 ## :pencil2: 功能
 
 1. 自動重新整理網頁
